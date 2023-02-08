@@ -648,67 +648,6 @@ memset(uart_buffer, 0, 100);
 	  	}
 	    }
 
-//	  else if (strcmp(msg, "Save_Pos")==0){
-//		  if (msg !=NULL){
-//
-//			  char*arg1=strtok(NULL, " ");
-//			  char*arg2=strtok(NULL, " ");
-//			  char*arg3=strtok(NULL, " ");
-//			  char*arg4=strtok(NULL, " ");
-//			  char*arg5=strtok(NULL, " ");
-//			  char*arg6=strtok(NULL, " ");
-//
-//			  savepos.x= atof(arg1);
-//			  savepos.y= atof(arg2);
-//			  savepos.z= atof(arg3);
-//			  savepos.Rx= atof(arg4);
-//			  savepos.Ry= atof(arg5);
-//			  savepos.Rz= atof(arg6);
-//
-//	         Inverse_6Joint(savepos.x,savepos.y,savepos.z,savepos.Rx,savepos.Ry,savepos.Rz);
-//
-//		  	   step1=angle2step(EQ.THETA1-theta1, 5);
-//		  	   step2=angle2step(EQ.THETA2-theta2, 20);
-//		  	   step3=angle2step(EQ.THETA3-theta3, 20);
-//		  	   step4=angle2step(EQ.THETA4-theta4, 14);
-//		  	   step5=angle2step(EQ.THETA5-theta5, 14);
-//		  	   step6=angle2step(EQ.THETA6-theta6, 14);
-//
-//		  	   theta1 = EQ.THETA1; // Set theta to update
-//		  	   theta2 = EQ.THETA2;
-//		  	   theta3 = EQ.THETA3;
-//		  	   theta4 = EQ.THETA4;
-//		  	   theta5 = EQ.THETA5;
-//		  	   theta6 = EQ.THETA6;
-
-
-//	         uint8_t count_pos;
-//
-//	         switch (count_pos){
-//	         case 1:
-//
-//	         break;
-//
-//		  	   step1=angle2step(EQ.THETA1-theta1, 5);
-//		  	   step2=angle2step(EQ.THETA2-theta2, 20);
-//		  	   step3=angle2step(EQ.THETA3-theta3, 20);
-//		  	   step4=angle2step(EQ.THETA4-theta4, 14);
-//		  	   step5=angle2step(EQ.THETA5-theta5, 14);
-//		  	   step6=angle2step(EQ.THETA6-theta6, 14);
-//
-//		  	   theta1 = EQ.THETA1; // Set theta to update
-//		  	   theta2 = EQ.THETA2;
-//		  	   theta3 = EQ.THETA3;
-//		  	   theta4 = EQ.THETA4;
-//		  	   theta5 = EQ.THETA5;
-//		  	   theta6 = EQ.THETA6;
-//
-//	         }
-//            count_pos=count_pos+1;
-//            if (count_pos>3)count_pos=0;
-
-//		  }
-//	  }
 
 	   if(Stepper1.run_status == 0){
 	 		    Accel_Stepper_Move(&Stepper1, step1 , accel1, accel1, theta1dot);
